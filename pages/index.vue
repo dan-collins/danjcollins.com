@@ -1,29 +1,31 @@
 <template>
   <section class="container">
     <div>
-      <logo />
+      <img class="profile-image" src="~/assets/images/default_avatar.png" />
       <h1 class="title">
-        danjcollins.com
+        Dan Collins
       </h1>
       <h2 class="subtitle">
-        My personal website statically generated with Nuxt.js
+        Software Developer
       </h2>
       <div class="links">
         <a href="https://nuxtjs.org/" target="_blank" class="button--green"
           >Documentation</a
         >
         <a
-          href="https://github.com/nuxt/nuxt.js"
+          href="https://github.com/dan-collins"
           target="_blank"
           class="button--grey"
-          >GitHub</a
         >
+          <font-awesome-icon :icon="['fab', 'github']" />
+        </a>
       </div>
     </div>
   </section>
 </template>
 
 <script>
+/*
 import Logo from '~/components/Logo.vue'
 
 export default {
@@ -31,6 +33,7 @@ export default {
     Logo
   }
 }
+*/
 </script>
 
 <style>
@@ -41,6 +44,10 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.profile-image {
+  width: 30%;
 }
 
 .title {
